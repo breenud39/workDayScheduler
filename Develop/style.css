@@ -52,6 +52,11 @@ textarea{
   color: white;
 }
 
+.outsideTimeZone{
+  background-color: #d3d3d3;
+  color: black;
+}
+
 .future {
   background-color: #77dd77;
   color: white;
