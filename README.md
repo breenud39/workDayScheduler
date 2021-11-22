@@ -6,6 +6,7 @@ The work day scheduler is a scheduler built for whatever purpose you desire. It 
 
 
 ## Screenshot
+Example of text in the layout
 <img src="https://github.com/breenud39/workDayScheduler/blob/main/Develop/img/topimg.PNG" height = "150" width = "150">
 <img src="https://github.com/breenud39/workDayScheduler/blob/main/Develop/img/bottomimg.PNG" height = "150" width = "150">
 
