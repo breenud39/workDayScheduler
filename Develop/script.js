@@ -1,3 +1,4 @@
+// This function uses moment js to calculate your time, and the time between the work times. (past, between, and future)
 $(document).ready(function()
 {
   var format = 'hh:mm:ss'
@@ -9,8 +10,6 @@ $(document).ready(function()
   console.log(presentTime);
   for (let i = 0; i <= 8; i++)
   {
-    // if (presentTime.isBetween(startTime, endTime)) {
-
       console.log('is between')
         if(i < currentTime -9)
         {
@@ -25,14 +24,13 @@ $(document).ready(function()
           // color green
           createElementsAsPerTime("future",i)
         }
-    // } else {
-      // createElementsAsPerTime("outsideTimeZone",i)
-    // }
+
   }
   let currentDay = $("#currentDay").text(moment().format("dddd, MMM Do"));
   $(".jumbotron").append(currentDay);
 });
 
+// This function dynamically creates all the HTML elements you can see as well as printing the time on your screen.
 function createElementsAsPerTime(time,i)
 {
   let parentElement = $("div").addClass("time-block row");
