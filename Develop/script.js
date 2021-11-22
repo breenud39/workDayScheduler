@@ -30,16 +30,17 @@ $(document).ready(function()
     // }
   }
   let currentDay = $("#currentDay").text(moment().format("dddd, MMM Do"));
-  $("#jumbotron").append(currentDay);
+  $(".jumbotron").append(currentDay);
 });
 
-function createElementsAsPerTime(time,i){
-  let parentElement = $("div").addClass("row parent");
-  let para = $("<p></p>").text(moment().hour(9).add(i, 'hours').format("hA"));
+function createElementsAsPerTime(time,i)
+{
+  let parentElement = $("div").addClass("time-block row");
+  let para = $("<p class='hour'></p>").text(moment().hour(9).add(i, 'hours').format("hA"));
 
-  para.addClass("col-md-3");
-  let textArea = $("<textarea class="+time+" 'style= padding left: 100px' />").addClass("col-md-6");
-  let linkElement = $("<button class='saveBtn'><i class='fas fa-unlock'></i></button>").addClass("col-md-3");
+  para.addClass("col-md-1");
+  let textArea = $("<textarea class="+time+"/>").addClass("col-md-10 description");
+  let linkElement = $("<button class='saveBtn'><i class='fas fa-unlock'></i></button>").addClass("col-md-1");
   linkElement.on("click", function()
   {
     console.log("button clicked");
