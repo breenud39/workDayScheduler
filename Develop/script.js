@@ -26,11 +26,12 @@ $(document).ready(function()
         }
 
   }
+  // This gets the day, month, and date number
   let currentDay = $("#currentDay").text(moment().format("dddd, MMM Do"));
   $(".jumbotron").append(currentDay);
 });
 
-// This function dynamically creates all the HTML elements you can see as well as printing the time on your screen.
+// This function dynamically creates all the HTML elements in the container div you can see as well as printing the time on your screen.
 function createElementsAsPerTime(time,i)
 {
   let parentElement = $("div").addClass("time-block row");
