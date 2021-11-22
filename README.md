@@ -2,11 +2,15 @@
 
 ## Description
 
+The work day scheduler 
+
+
 ## Screenshot
-<img src="https://github.com/breenud39/workDayScheduler/blob/main/Develop/img/Capture.PNG" height = "100" width = "100">
+<img src="topimg.PNG" height = "100" width = "100">
+<img src="bottomimg.PNG" height = "100" width = "100">
 
 ## URL Github:
 
-Live Website: 
+Live Website: https://breenud39.github.io/workDayScheduler/
 
 Code Repository: https://github.com/breenud39/workDayScheduler
